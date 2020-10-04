@@ -12,7 +12,7 @@ function Clicky.new(object, callback)
 	local checkcallback = t.callback(callback)
 	if checkobj == false then error(checkobj) end
 	if checkcallback == false then error(checkcallback) end
-	
+
 	local self = setmetatable(BaseObject.new(Instance.new("ClickDetector", object)), Clicky)
 
 	self.timesClicked = 0
