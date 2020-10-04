@@ -13,29 +13,9 @@ jobs:
         steps:
         - script: |
             LUA="lua=5.1"
-          displayName: "Setup Enviroment Variables"
-
-        - script: |
             pip install hererocks
             hererocks lua_install -r^ --$LUA
             export PATH=$PATH:$PWD/lua_install/bin
-          displayName: "Before Install"
-
-        - script: |
-            sudo apt install build-essential libreadline-dev
-            curl -R -O http://www.lua.org/ftp/lua-5.3.5.tar.gz
-            tar -zxf lua-5.3.5.tar.gz
-            cd lua-5.3.5
-            make linux test
-            sudo make install
-            cd ..
-            wget https://luarocks.org/releases/luarocks-3.3.1.tar.gz
-            tar zxpf luarocks-3.3.1.tar.gz
-            cd luarocks-3.3.1
-            ./configure --with-lua-include=/usr/local/include
-            make
-            sudo make install
-            cd ..
             luarocks install luafilesystem
             luarocks install busted
             luarocks install luacov
