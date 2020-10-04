@@ -1,4 +1,4 @@
-
+-- borrowed from Rodux
 stds.roblox = {
 	globals = {
 		"game"
