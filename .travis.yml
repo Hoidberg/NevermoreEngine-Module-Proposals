@@ -1,4 +1,5 @@
 # http://kiki.to/blog/2016/02/04/talk-continuous-integration-with-lua/
+# borrowed from Rodux
 language: python
 sudo: false
 
