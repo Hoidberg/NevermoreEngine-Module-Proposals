@@ -1,3 +1,3 @@
 return function(name)
-    return script:FindFirstChild(name)
+    return require(script:FindFirstChild(name))
 end
