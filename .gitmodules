@@ -3,4 +3,8 @@
 	url = https://github.com/LPGhatguy/lemur.git
 [submodule "modules/testez"]
 	path = modules/testez
+<<<<<<< HEAD
 	url = https://github.com/Roblox/testez.git
+=======
+	url = https://github.com/Roblox/testez.git
+>>>>>>> eda157432c200194c851a44c03355e865c28f678
