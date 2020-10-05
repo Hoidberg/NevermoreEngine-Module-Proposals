@@ -3,7 +3,7 @@ return function()
 	local placeholder = "I don't know what to put here lol"
 	
 	it("creates a ClickDetector and fires the given function when it is clicked", function()
-		expect(Clicky).to.be.ok
+		expect(Clicky).to.be.ok()
 	end)
 	
 	describe("object", function()
@@ -16,7 +16,7 @@ return function()
 				end
 			end)
 
-			expect(ClickDetector._obj).to.be.ok
+			expect(ClickDetector._obj).to.be.ok()
 		end)
 	end)
 	
@@ -30,7 +30,7 @@ return function()
 				end
 			end)
 
-			expect(ClickDetector).to.be.ok
+			expect(ClickDetector).to.be.ok()
 		end)
 	end)
 end
