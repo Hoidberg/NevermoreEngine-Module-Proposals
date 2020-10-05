@@ -5,6 +5,7 @@ table.unpack = unpack -- luacheck: ignore
 
 local LOAD_MODULES = {
 	Library = "src",
+	Clicky = "src/Clicky"
 	TestEZ = "modules/testez/src",
 }
 
