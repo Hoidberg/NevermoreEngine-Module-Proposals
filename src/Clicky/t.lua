@@ -423,7 +423,7 @@ function t.literal(...)
 			literals[i] = t.literal(value)
 		end
 
-		return t.union(table.unpack(literals, 1, size))
+		return t.union(unpack(literals, 1, size))
 	end
 end
 
@@ -448,7 +448,7 @@ function t.keyOf(keyTable)
 		keys[length] = key
 	end
 
-	return t.literal(table.unpack(keys, 1, length))
+	return t.literal(unpack(keys, 1, length))
 end
 
 --[[**
@@ -466,7 +466,7 @@ function t.valueOf(valueTable)
 		values[length] = value
 	end
 
-	return t.literal(table.unpack(values, 1, length))
+	return t.literal(unpack(values, 1, length))
 end
 
 --[[**
