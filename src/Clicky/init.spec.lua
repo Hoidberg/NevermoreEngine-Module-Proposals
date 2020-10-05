@@ -8,7 +8,7 @@ return function()
 	
 	describe("object", function()
 		it("contains the ClickDetector", function()
-			local ClickDetector = Clicky.new(workspace.Part, function(times)
+			local ClickDetector = Clicky.new(Instance.new("Part", workspace), function(times)
 				if times == 1 then
 					print(placeholder)
 				else
@@ -22,7 +22,7 @@ return function()
 	
 	describe("callback", function()
 		it("should be fired when the given object is clicked", function()
-			local ClickDetector = Clicky.new(workspace.Part, function(times)
+			local ClickDetector = Clicky.new(Instance.new("Part", workspace), function(times)
 				if times == 1 then
 					print(placeholder)
 				else
