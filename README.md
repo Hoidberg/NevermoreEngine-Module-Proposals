@@ -6,4 +6,5 @@
 	<a href='https://coveralls.io/github/Hoidberg/NevermoreEngine-Module-Proposals?branch=main'>
 		<img alt="Coveralls github" src="https://img.shields.io/coveralls/github/Hoidberg/NevermoreEngine-Module-Proposals?style=flat-square">
 	</a>
+	<img alt="GitHub code size in bytes" src="https://img.shields.io/github/languages/code-size/Hoidberg/NevermoreEngine-Module-Proposals?style=flat-square">
 </div>
