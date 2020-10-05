@@ -1,3 +1,4 @@
+-- a simple module loader
 return function(name)
 	if script:FindFirstChild(name) then
 		return require(script:FindFirstChild(name))
