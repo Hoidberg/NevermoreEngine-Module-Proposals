@@ -1,7 +1,7 @@
 local load = require(game:GetService("ReplicatedStorage"):WaitForChild("Nevermore"))
 
 local BaseObject = load("BaseObject")
-local t = require(script.Parent.t)
+local t = require(script.t)
 
 local Clicky = {}
 Clicky.ClassName = Clicky
