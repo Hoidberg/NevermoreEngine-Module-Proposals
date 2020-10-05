@@ -5,7 +5,7 @@ stds.roblox = {
 	},
 	read_globals = {
 		-- Roblox globals
-		"script",
+		"script", "workspace",
 
 		-- Extra functions
 		"tick", "warn", "spawn",
