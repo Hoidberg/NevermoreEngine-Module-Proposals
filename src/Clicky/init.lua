@@ -7,11 +7,10 @@ local Clicky = {}
 Clicky.ClassName = Clicky
 Clicky.__index = Clicky
 
+local argCheck = t.tuple(t.instanceIsA("BasePart"), t.callback)
+
 function Clicky.new(object, callback)
-	local checkobj = t.Instance(object)
-	local checkcallback = t.callback(callback)
-	if checkobj == false then error(checkobj) end
-	if checkcallback == false then error(checkcallback) end
+	assert(argCheck(object, callback))
 
 	local self = setmetatable(BaseObject.new(Instance.new("ClickDetector", object)), Clicky)
 
