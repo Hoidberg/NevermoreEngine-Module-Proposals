@@ -1,7 +1,11 @@
 return function()
 	local Clicky = require(script.Parent)
 	local placeholder = "I don't know what to put here lol"
-
+	
+	it("creates a ClickDetector and fires the given function when it is clicked", function()
+		expect(Clicky).to.be.ok
+	end)
+	
 	describe("object", function()
 		it("contains the ClickDetector", function()
 			local ClickDetector = Clicky.new(workspace.Part, function(times)
