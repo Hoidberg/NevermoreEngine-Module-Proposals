@@ -5,7 +5,7 @@ sudo: false
 
 branches:
   only:
-    - master
+    - main
 
 env:
   - LUA="lua=5.1"
