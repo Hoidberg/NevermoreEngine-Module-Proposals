@@ -1,5 +1,5 @@
 return function()
-	local t = require(script.Parent)
+	local t = require(script.Parent.t)
 
 	it("should support basic types", function()
 		assert(t.any(""))
