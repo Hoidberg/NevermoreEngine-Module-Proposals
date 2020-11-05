@@ -15,21 +15,19 @@ function Clicky.new(object, callback)
 	local self = setmetatable(BaseObject.new(Instance.new("ClickDetector", object)), Clicky)
 
 	self.timesClicked = 0
-
-	self._obj.MouseClick:Connect(function()
+	self._connection = self._obj.MouseClick:Connect(function()
 		self.timesClicked = self.timesClicked + 1
 		callback(self.timesClicked)
-	end)
-	self._maid:GiveTask(function()
-		self._obj:Destroy()
-		setmetatable(self, nil)
 	end)
 
 	return self
 end
 
 function Clicky:Destroy()
-	self._maid:DoCleaning()
+	self._obj:Destroy()
+	self._connection:Disconnect()
+
+	setmetatable(self, nil)
 end
 
 return Clicky
